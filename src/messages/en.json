@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "titleTemplate": "%s | KFO — Khaled Alfagih Engineering Consultancy",
+    "home": {
+      "title": "Khaled Alfagih Engineering Consultancy Company",
+      "description": "One of the most specialized engineering consultancy firms in healthcare planning and design in KSA. 29+ years in architecture & engineering design, execution supervision and project management."
+    },
+    "about": { "title": "About Us", "description": "29+ years of engineering consultancy in Saudi Arabia — healthcare planning and design, teamwork, client relationship and knowledge transfer." },
+    "services": { "title": "Services", "description": "Planning, expert engineering, renovation, design & supervision — engineering consultancy services by KFO." },
+    "projects": { "title": "Projects", "description": "Selected projects by KFO across healthcare, education, residential, industrial, hospitality, offices, transportation and interior." },
+    "project": { "title": "Project", "description": "Project details by Khaled Alfagih Engineering Consultancy Company." },
+    "clients": { "title": "Our Clients", "description": "Government bodies, hospital owners, developers, investors and contractors who trust KFO." },
+    "knowledge": { "title": "Knowledge Center", "description": "Articles, guides and downloads from KFO — knowledge transfer in engineering consultancy." },
+    "events": { "title": "Events", "description": "Events, news and updates from Khaled Alfagih Engineering Consultancy Company." },
+    "event": { "title": "Event", "description": "Event details from KFO." },
+    "contact": { "title": "Contact Us", "description": "Get in touch with KFO in Riyadh — request a quote for your next project." },
+    "category": { "title": "Projects", "description": "Projects by category." }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "projects": "Projects",
+    "clients": "Our Clients",
+    "knowledge": "Knowledge Center",
+    "events": "Events",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "العربية",
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "topbar": {
+    "phone": "+966 11 232 1519",
+    "email": "info@kfoco.com",
+    "whatsapp": "+966 50 651 5861",
+    "followUs": "Follow us"
+  },
+  "hero": {
+    "eyebrow": "ENGINEERING CONSULTANCY CO.",
+    "title1": "KHALED ALFAGIH",
+    "title2": "ENGINEERING CONSULTANCY COMPANY",
+    "tagline": "Delivering High Quality, Effective, and Inspiring Built Space.",
+    "downloadProfile": "Download Company Profile",
+    "ourProjects": "Our Projects",
+    "yearsBadge": "+29 Years of Experience",
+    "caption": "Inspired Designs for people",
+    "scroll": "Scroll",
+    "slideAlt": "KFO project — {name}"
+  },
+  "about": {
+    "label": "ABOUT US",
+    "heading": "Delivering High Quality, Effective, and Inspiring Built Space.",
+    "body": "Khaled Alfagih Engineering Consultancy Company is one of the most specialized engineering consultancy firms in healthcare planning and design in KSA with more than 29 years of experience. KFO provides quality in the field of architecture and engineering design, execution supervision and project management. KFO focuses on teamwork, client relationship and knowledge transfer.",
+    "continueReading": "Continue reading",
+    "yearsCard": "+29 Years",
+    "yearsCardSub": "of experience",
+    "imageAlt": "KFO engineering consultancy — architecture and healthcare design in Saudi Arabia"
+  },
+  "categories": {
+    "label": "WHAT WE DO",
+    "heading": "Project Categories",
+    "text": "From healthcare — our core specialty — to education, residential and beyond, our portfolio covers the full built environment.",
+    "viewProjects": "View projects",
+    "imageAlt": "{name} projects by KFO"
+  },
+  "projects": {
+    "label": "OUR PROJECTS",
+    "heading": "Selected Projects",
+    "text": "A selection of healthcare and building projects delivered with precision and care.",
+    "readMore": "Read More",
+    "browseAll": "Browse our Projects",
+    "meta": {
+      "location": "Location",
+      "category": "Category",
+      "year": "Year",
+      "client": "Client",
+      "area": "Area",
+      "services": "Services",
+      "status": "Status"
+    },
+    "filterAll": "All",
+    "filterLabel": "Filter projects by category",
+    "gallery": "Project gallery",
+    "galleryImage": "Gallery image {n}",
+    "nextProject": "Next project",
+    "prevProject": "Previous project",
+    "backToProjects": "Back to projects",
+    "share": "Share",
+    "related": "Related projects",
+    "noProjects": "TODO: projects in this category will be published soon."
+  },
+  "services": {
+    "label": "LET US HELP DESIGNING YOUR DREAM",
+    "heading": "We can create more than you expect",
+    "text": "We assure our clients a building design which caters to all their needs and requirements through our diverse range of services and experience in the field of engineering consultancy.",
+    "exploreAll": "Explore all services",
+    "processLabel": "OUR PROCESS",
+    "processHeading": "From first sketch to handover",
+    "ctaHeading": "Let's design your next project together"
+  },
+  "cta": {
+    "label": "LET US HELP BUILDING YOUR DREAM",
+    "heading": "Delivering High Quality, Effective and Inspiring Built Space.",
+    "button": "Get a free quote"
+  },
+  "stats": {
+    "label": "QUALIFICATIONS",
+    "title": "Our Achievements & Story in numbers",
+    "qualificationsHeading": "Updated Profile",
+    "qualificationsText": "Certifications and qualifications — TODO: replace with the official scanned certificates.",
+    "qualificationsAlt": "Certificate {n}",
+    "openLightbox": "Open certificate {n} in lightbox"
+  },
+  "clients": {
+    "label": "OUR CLIENTS",
+    "title": "Our Clients, Our Partners",
+    "text": "Government bodies, hospital owners, developers, investors and contractors trust KFO to deliver.",
+    "button": "Our Clients",
+    "logoAlt": "TODO: Client logo {n}",
+    "gridHeading": "Clients & Partners"
+  },
+  "footer": {
+    "about": "Khaled Alfagih Engineering Consultancy Company is one of the most specialized engineering consultancy firms in healthcare planning and design in KSA with more than 29 years of experience…",
+    "aboutCompany": "About Company",
+    "getInTouch": "Get in Touch",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "mapPlaceholder": "Map — TODO: embed the office location",
+    "rights": "Copyright © 2026 Khaled Alfagih Engineering Consultancy Company. All Rights Reserved.",
+    "followUs": "Follow us"
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "download": "Download",
+    "backToTop": "Back to top",
+    "loading": "Loading…",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous",
+    "placeholder": "TODO: replace",
+    "or": "or"
+  },
+  "pages": {
+    "about": {
+      "storyLabel": "OUR STORY",
+      "storyHeading": "A practice built on precision and trust",
+      "story1": "Khaled Alfagih Engineering Consultancy Company (KFO) is one of the most specialized engineering consultancy firms in healthcare planning and design in the Kingdom of Saudi Arabia, with more than 29 years of experience.",
+      "story2": "TODO: expand the company story with the client's official narrative — founding, growth and landmark projects.",
+      "visionLabel": "VISION & MISSION",
+      "visionTitle": "Vision",
+      "visionText": "TODO: replace with the official vision statement.",
+      "missionTitle": "Mission",
+      "missionText": "TODO: replace with the official mission statement.",
+      "valuesLabel": "OUR VALUES",
+      "valuesHeading": "What we stand for",
+      "values": {
+        "teamwork": {
+          "title": "Teamwork",
+          "text": "Multidisciplinary teams working as one — every discipline coordinated around the client's goal."
+        },
+        "client": {
+          "title": "Client Relationship",
+          "text": "Long-term relationships built on clarity, responsiveness and delivered quality."
+        },
+        "knowledge": {
+          "title": "Knowledge Transfer",
+          "text": "Sharing expertise across teams and partners so every project leaves the practice stronger."
+        }
+      },
+      "timelineLabel": "OUR JOURNEY",
+      "timelineHeading": "29 years, step by step",
+      "profileCta": "Download the company profile for the full story, qualifications and selected projects.",
+      "statsLabel": "IN NUMBERS"
+    },
+    "services": {
+      "label": "OUR SERVICES",
+      "heading": "Engineering consultancy, end to end",
+      "text": "We assure our clients a building design which caters to all their needs and requirements through our diverse range of services and experience in the field of engineering consultancy."
+    },
+    "projects": {
+      "label": "OUR PROJECTS",
+      "heading": "Projects",
+      "text": "Browse KFO projects across all categories — TODO: add the full verified portfolio."
+    },
+    "clients": {
+      "label": "OUR CLIENTS",
+      "heading": "Our Clients, Our Partners",
+      "text": "We are proud to work with leading government bodies, hospital owners, developers, investors and contractors across Saudi Arabia. TODO: add the verified list of client names."
+    },
+    "knowledge": {
+      "label": "KNOWLEDGE CENTER",
+      "heading": "Insights & resources",
+      "text": "Articles, guides and downloads from our practice — knowledge transfer is one of our core values.",
+      "search": "Search articles…",
+      "searchLabel": "Search the Knowledge Center",
+      "allCategories": "All",
+      "noResults": "No results match your search.",
+      "downloadNow": "Download",
+      "readMore": "Read more"
+    },
+    "events": {
+      "label": "EVENTS",
+      "heading": "Events & news",
+      "text": "Where to find our team — conferences, forums and industry events. TODO: publish the real events calendar.",
+      "readMore": "Read more",
+      "backToEvents": "Back to events",
+      "nextEvent": "Next event",
+      "prevEvent": "Previous event"
+    },
+    "contact": {
+      "label": "CONTACT US",
+      "heading": "Let's start a conversation",
+      "text": "Tell us about your project and our team will get back to you. For a quick response, reach us on WhatsApp.",
+      "formHeading": "Send us a message",
+      "detailsHeading": "Contact details",
+      "hoursLabel": "Working hours",
+      "hours": "TODO: confirm working hours",
+      "whatsappCta": "Chat on WhatsApp"
+    }
+  },
+  "form": {
+    "name": "Full name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Thank you! Your message is ready to be sent — TODO: connect this form to the client's email endpoint or CRM.",
+    "errors": {
+      "nameRequired": "Please enter your name",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneRequired": "Please enter your phone number",
+      "subjectRequired": "Please enter a subject",
+      "messageRequired": "Please enter your message",
+      "messageShort": "Please write at least 10 characters"
+    },
+    "required": "required"
+  },
+  "a11y": {
+    "title": "Accessibility",
+    "open": "Open accessibility settings",
+    "increaseText": "Increase text size",
+    "decreaseText": "Decrease text size",
+    "highContrast": "High contrast",
+    "grayscale": "Grayscale",
+    "underlineLinks": "Underline links",
+    "readableFont": "Readable font",
+    "reset": "Reset settings"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "jsonLd": {
+    "organizationName": "Khaled Alfagih Engineering Consultancy Company",
+    "description": "Engineering consultancy specialized in healthcare planning and design in the Kingdom of Saudi Arabia with more than 29 years of experience."
+  }
+}

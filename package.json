@@ -1,0 +1,36 @@
+{
+  "name": "kfoco-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Khaled Alfagih Engineering Consultancy Company — bilingual (EN/AR) marketing website front-end",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "framer-motion": "11.18.2",
+    "lenis": "1.1.20",
+    "lucide-react": "0.469.0",
+    "next": "^14.2.35",
+    "next-intl": "3.26.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.7",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "autoprefixer": "10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.24",
+    "postcss": "8.5.1",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3"
+  }
+}

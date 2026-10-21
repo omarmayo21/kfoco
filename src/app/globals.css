@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/* Fonts — Playfair Display (EN display) / Inter (EN body) /            */
+/* IBM Plex Sans Arabic (AR everything). Variables set by next/font.    */
+/* ------------------------------------------------------------------ */
+:root {
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+}
+
+html[lang='ar'] {
+  --font-display: var(--font-plex-arabic), 'Segoe UI', Tahoma, sans-serif;
+  --font-body: var(--font-plex-arabic), 'Segoe UI', Tahoma, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-offwhite text-textc font-body antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-steel/30 text-ink;
+  }
+
+  /* Keyboard focus — consistent steel-blue ring everywhere */
+  :focus-visible {
+    outline: 2px solid theme('colors.steel.DEFAULT');
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-ink;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Slim uppercase letter-spaced section label, e.g. "01 — ABOUT" */
+  .label-eyebrow {
+    @apply inline-flex items-center gap-3 font-body text-[11px] font-medium uppercase tracking-label text-steel-shade;
+  }
+
+  .label-eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-gold;
+  }
+
+  .label-eyebrow-light {
+    @apply text-steel-tint;
+  }
+
+  /* Editorial container: 12-col grid width + generous gutters */
+  .container-x {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Thin 1px divider used between editorial blocks */
+  .hairline {
+    @apply h-px w-full bg-ink/10;
+  }
+
+  /* Architectural blueprint grid decoration (3–6% opacity) */
+  .bg-blueprint {
+    background-image:
+      linear-gradient(to right, rgba(15, 27, 45, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 27, 45, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .bg-blueprint-light {
+    background-image:
+      linear-gradient(to right, rgba(220, 230, 234, 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(220, 230, 234, 0.07) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  /* Buttons — fill-sweep hover (steel → navy), arrow nudge handled in Button.tsx */
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-[3px] px-7 py-3.5 font-body text-[13px] font-medium uppercase tracking-widest transition-colors duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-steel text-white;
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 origin-left scale-x-0 bg-ink transition-transform duration-500 ease-out-expo;
+  }
+
+  .btn-primary:hover::before,
+  .btn-primary:focus-visible::before {
+    @apply scale-x-100;
+  }
+
+  /* RTL: sweep from the right */
+  html[dir='rtl'] .btn-primary::before {
+    @apply origin-right;
+  }
+
+  .btn-primary > * {
+    @apply relative z-10;
+  }
+
+  .btn-outline {
+    @apply border border-white/60 text-white backdrop-blur-sm;
+  }
+
+  .btn-outline::before {
+    content: '';
+    @apply absolute inset-0 origin-left scale-x-0 bg-white transition-transform duration-500 ease-out-expo;
+  }
+
+  .btn-outline:hover::before,
+  .btn-outline:focus-visible::before {
+    @apply scale-x-100;
+  }
+
+  html[dir='rtl'] .btn-outline::before {
+    @apply origin-right;
+  }
+
+  .btn-outline:hover,
+  .btn-outline:focus-visible {
+    @apply text-ink;
+  }
+
+  .btn-outline > * {
+    @apply relative z-10;
+  }
+
+  .btn-dark {
+    @apply bg-ink text-white;
+  }
+
+  .btn-dark::before {
+    content: '';
+    @apply absolute inset-0 origin-left scale-x-0 bg-steel-shade transition-transform duration-500 ease-out-expo;
+  }
+
+  .btn-dark:hover::before,
+  .btn-dark:focus-visible::before {
+    @apply scale-x-100;
+  }
+
+  html[dir='rtl'] .btn-dark::before {
+    @apply origin-right;
+  }
+
+  .btn-dark > * {
+    @apply relative z-10;
+  }
+
+  /* Placeholder marker for TODO content */
+  .todo-mark {
+    @apply border-b border-dashed border-gold/70 text-textc-muted italic;
+    unicode-bidi: isolate;
+  }
+
+  /* Client logos: white JPG backgrounds blended out over light surfaces */
+  .logo-blend {
+    @apply mix-blend-multiply;
+  }
+
+  /* Marquee rows — directions mirror in RTL (see rules below) */
+  .marquee-track {
+    @apply flex w-max items-center;
+    animation: marquee 55s linear infinite;
+  }
+
+  .marquee-track.marquee-track-slow {
+    animation-duration: 85s;
+    animation-direction: reverse;
+  }
+
+  .marquee-row:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  /* RTL: mirror both rows so the visual flow stays natural */
+  html[dir='rtl'] .marquee-track {
+    animation-direction: reverse;
+  }
+
+  html[dir='rtl'] .marquee-track.marquee-track-slow {
+    animation-direction: normal;
+  }
+}
+
+@layer utilities {
+  /* Text balance/orphans */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient overlays for photography */
+  .overlay-ink {
+    background: linear-gradient(
+      to top,
+      rgba(11, 31, 51, 0.92) 0%,
+      rgba(11, 31, 51, 0.55) 45%,
+      rgba(11, 31, 51, 0.35) 100%
+    );
+  }
+
+  .overlay-ink-soft {
+    background: linear-gradient(
+      to top,
+      rgba(11, 31, 51, 0.85) 0%,
+      rgba(11, 31, 51, 0.4) 60%,
+      rgba(11, 31, 51, 0.3) 100%
+    );
+  }
+
+  /* White logo over dark surfaces (TODO: swap for real white asset) */
+  .logo-on-dark {
+    filter: brightness(0) invert(1);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Accessibility widget state classes (applied on <html>)               */
+/* ------------------------------------------------------------------ */
+html.a11y-text-lg {
+  font-size: 120%;
+}
+
+html.a11y-text-sm {
+  font-size: 90%;
+}
+
+html.a11y-contrast {
+  filter: contrast(1.35);
+}
+
+html.a11y-gray {
+  filter: grayscale(1);
+}
+
+html.a11y-contrast.a11y-gray {
+  filter: contrast(1.35) grayscale(1);
+}
+
+html.a11y-underline a {
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+html.a11y-readable {
+  --font-display: system-ui, sans-serif !important;
+  --font-body: system-ui, sans-serif !important;
+  letter-spacing: 0.02em;
+}
+
+html.a11y-readable body,
+html.a11y-readable h1,
+html.a11y-readable h2,
+html.a11y-readable h3,
+html.a11y-readable h4 {
+  font-family: system-ui, sans-serif !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Reduced motion — kill decorative animation globally                 */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
